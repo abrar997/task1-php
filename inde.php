@@ -31,7 +31,7 @@ if (file_exists('todo.json')) {
                     <form action="todo.php" method="post">
                         <h5>start your daily tasks with us </h5>
                         <input type="text" name="todotext" placeholder="daily tasks " />
-                        <button type="submit" name="submit">add </button>
+                        <button type="submit" name="submit">+ </button>
                     </form>
                     <div>
                         <!-- syntax of input values -->
