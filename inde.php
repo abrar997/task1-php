@@ -31,7 +31,7 @@ if (file_exists('todo.json')) {
                     <form action="todo.php" method="post">
                         <h5>start your daily tasks with us </h5>
                         <input type="text" name="todotext" placeholder="daily tasks " />
-                        <button type="submit" name="submit">+ </button>
+                        <button type="submit" name="submit" title="add task">+ </button>
                     </form>
                     <div>
                         <!-- syntax of input values -->
@@ -41,7 +41,7 @@ if (file_exists('todo.json')) {
                                     <!--result of input-->
                                     <form action="delete.php" method="post">
                                         <input type="hidden" name="todotext2" value="<?php echo $todotext; ?>" />
-                                        <button class="delete-btn"> x </button>
+                                        <button class="delete-btn" title="delete task"> x </button>
                                     </form>
                                 </li>
                             </ul>
